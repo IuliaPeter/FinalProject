@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="All" verbose="1">
+    <test name="change language">
+        <classes>
+            <class name="gymbeam.ChangeLanguageTest"/>
+        </classes>
+    </test>
+
+    <test name="valid login">
+        <classes>
+            <class name="gymbeam.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="search product">
+        <classes>
+            <class name="gymbeam.SearchTextboxTest"/>
+        </classes>
+    </test>
+
+    <test name="sort by">
+        <classes>
+            <class name="gymbeam.SortByTest"/>
+        </classes>
+    </test>
+
+    <test name="add to cart">
+        <classes>
+            <class name="gymbeam.AddToCartTest"/>
+        </classes>
+    </test>
+</suite>
