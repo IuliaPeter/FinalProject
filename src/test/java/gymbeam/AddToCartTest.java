@@ -29,7 +29,7 @@ public class AddToCartTest {
         }
         sleep(2000);
     }
-    @Test
+    @Test (priority = 5)
     public void addToCartTest () throws InterruptedException {
 
         WebElement cartButton= driver.findElement(By.xpath("//*[@id=\"product-item-info_5075\"]/div[1]/div[2]/div/form/button"));

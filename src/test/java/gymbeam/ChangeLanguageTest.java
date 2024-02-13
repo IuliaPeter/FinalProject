@@ -36,7 +36,7 @@ public class ChangeLanguageTest {
         sleep(2000);
     }
 
-    @Test
+    @Test (priority = 1)
     public void changeLanguage () throws InterruptedException {
         WebElement languageButton = driver.findElement(By.xpath("//*[@id=\"switcher-language-trigger\"]"));
         languageButton.click();

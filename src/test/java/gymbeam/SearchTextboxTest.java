@@ -35,7 +35,7 @@ public class SearchTextboxTest {
         sleep(2000);
     }
 
-    @Test
+    @Test (priority = 3)
 
     public void searchTest () throws InterruptedException {
         WebElement searchTextBoxInput= driver.findElement(By.xpath("//*[@id=\"search\"]"));

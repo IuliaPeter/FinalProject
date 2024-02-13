@@ -34,7 +34,7 @@ public class SortByTest {
         sleep(2000);
     }
 
-    @Test
+    @Test (priority = 4)
     public void sortbyTest () throws InterruptedException {
       WebElement sortButton= driver.findElement(By.id("sorter"));
       sortButton.click();

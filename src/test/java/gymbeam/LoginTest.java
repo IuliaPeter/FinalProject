@@ -35,7 +35,7 @@ public class LoginTest {
         sleep(1000);
     }
 
-    @Test
+    @Test (priority = 2)
     public void loginTest () throws InterruptedException {
         WebElement authenticateButton= driver.findElement(By.xpath("//*[@id=\"html-body\"]/div[4]/header/div[2]/div[2]/ul/li[2]/label/a"));
         authenticateButton.click();
