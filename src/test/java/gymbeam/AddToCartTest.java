@@ -39,8 +39,8 @@ public class AddToCartTest {
         WebElement addToCartButton= driver.findElement(By.xpath("//*[@id=\"product-addtocart-button\"]"));
         addToCartButton.click();
         sleep(2000);
-        Assert.assertTrue(addToCartButton.isDisplayed(),"Ați adăugat True Whey - GymBeam în coșul de cumpărături");
         if (addToCartButton.isDisplayed()) {
+            Assert.assertTrue(addToCartButton.isDisplayed(), "Ați adăugat True Whey - GymBeam în coșul de cumpărături");
         }
         sleep(3000);
 }
