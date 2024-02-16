@@ -59,7 +59,7 @@ public class LoginTest {
         String actualUrl="https://gymbeam.ro/customer/account/login";
         String expectedUrl= driver.getCurrentUrl();
         Assert.assertEquals(expectedUrl,actualUrl);
-        sleep(2000);
+        sleep(4000);
 
     }
 
