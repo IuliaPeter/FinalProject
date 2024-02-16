@@ -23,9 +23,8 @@ public class ChangeLanguageTest {
         driver = new ChromeDriver();
         driver.get(url);
         driver.manage().window().maximize();
-        sleep(2000);
-        try {
-            WebElement allowButton = driver.findElement(By.id("btn-cookie-allow"));
+        sleep(2000);try {
+            WebElement allowButton = driver.findElement(By.xpath("//button[contains(@class, 'stay_button')]"));
             if (allowButton.isDisplayed()) {
                 allowButton.click();
             }
@@ -34,11 +33,21 @@ public class ChangeLanguageTest {
             throw new RuntimeException("Nu am gasit elementul");
         }
         sleep(2000);
+  /*      try {
+            WebElement allowButton = driver.findElement(By.id("btn-cookie-allow"));
+            if (allowButton.isDisplayed()) {
+                allowButton.click();
+            }
+        }*/
+ /*       catch (Exception e) {
+            throw new RuntimeException("Nu am gasit elementul");
+        }*/
+        sleep(2000);
     }
 
     @Test (priority = 1)
     public void changeLanguage () throws InterruptedException {
-        WebElement languageButton = driver.findElement(By.xpath("//*[@id=\"switcher-language-trigger\"]"));
+        WebElement languageButton = driver.findElement(By.xpath("//div[@id=\"switcher-language-trigger\"]"));
         languageButton.click();
         sleep(2000);
 
